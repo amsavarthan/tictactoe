@@ -78,7 +78,11 @@ const Home = () => {
   //UTILITY FUNCTIONS
 
   const createRoom = () => {
-    if (name.replaceAll(" ", "").length === 0) return;
+    if (!name.match(/^[a-zA-Z ]{2,30}$/)) {
+      toggle();
+      toggleAlert("Invalid Name", "danger");
+      return;
+    }
     setLoading(true);
     //send a create room request
     socket.emit("create-room", { name });
@@ -86,11 +90,11 @@ const Home = () => {
   };
 
   const joinRoom = () => {
-    if (
-      name.replaceAll(" ", "").length === 0 ||
-      roomId.replaceAll(" ", "").length === 0
-    )
+    if (!name.match(/^[a-zA-Z ]{2,30}$/) || roomId.length === 0) {
+      toggle();
+      toggleAlert("Invalid Inputs", "danger");
       return;
+    }
     setLoading(true);
     //send a join room request
     socket.emit("join-room", { name, roomId });
