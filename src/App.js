@@ -18,7 +18,8 @@ import { Toast, KIND } from "baseui/toast";
 import { StyledSpinnerNext } from "baseui/spinner";
 import DayNightSwitch from "./components/DayNightSwitch";
 
-const socket = io(process.env.SERVER || "http://localhost:9900/");
+//For development localhost:9900
+const socket = io(process.env.SERVER);
 
 const engine = new Styletron();
 
