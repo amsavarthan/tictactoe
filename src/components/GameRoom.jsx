@@ -98,9 +98,9 @@ const ModernGameRoom = ({ match }) => {
 
     //When ever the other player click on a cell
     //this is catched
-    socket.on("on-user-selected", ({ clickedAt, clickedBy, playedBy }) => {
+    socket.on("on-user-selected", ({ completedCells, playedBy }) => {
       setCanPlay(playedBy !== socket.id);
-      setCompletedCells([...completedCells, { clickedAt, clickedBy }]);
+      setCompletedCells(completedCells);
     });
 
     //to restart the game
@@ -195,12 +195,13 @@ const ModernGameRoom = ({ match }) => {
       ...completedCells,
       { clickedAt, clickedBy: currentPlayer },
     ]);
-
     socket.emit("on-user-selection", {
       roomId,
-      clickedAt,
-      clickedBy: currentPlayer,
       playedBy: socket.id,
+      completedCells: [
+        ...completedCells,
+        { clickedAt, clickedBy: currentPlayer },
+      ],
     });
   };
 

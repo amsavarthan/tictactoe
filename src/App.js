@@ -18,9 +18,7 @@ import { Toast, KIND } from "baseui/toast";
 import { StyledSpinnerNext } from "baseui/spinner";
 import DayNightSwitch from "./components/DayNightSwitch";
 
-const socket = io(
-  process.env.SERVER || "https://tictactoe-game-server.herokuapp.com/"
-);
+const socket = io(process.env.SERVER || "http://localhost:9900/");
 
 const engine = new Styletron();
 
@@ -74,6 +72,7 @@ const App = () => {
 
     //triggred when a user joins a room
     socket.on("game-status-update", (document) => {
+      setCompletedCells(document.playedCells);
       setCurrentPlayer(
         document.player1.id === socket.id
           ? "player1"
@@ -102,7 +101,6 @@ const App = () => {
 
       setPlayerOneName(document.player1.name);
       setPlayerTwoName(document.player2.name);
-      setCompletedCells(document.playedCells);
     });
   }, []);
 
