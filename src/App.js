@@ -18,8 +18,7 @@ import { Toast, KIND } from "baseui/toast";
 import { StyledSpinnerNext } from "baseui/spinner";
 import DayNightSwitch from "./components/DayNightSwitch";
 
-const SERVER = "http://tictactoe-game-server.herokuapp.com/";
-const socket = io(SERVER);
+const socket = io(process.env.SERVER);
 
 const engine = new Styletron();
 
