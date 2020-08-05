@@ -19,7 +19,7 @@ import { StyledSpinnerNext } from "baseui/spinner";
 import DayNightSwitch from "./components/DayNightSwitch";
 
 //For development localhost:9900
-const socket = io(process.env.SERVER);
+const socket = io(process.env.SERVER, { secure: true });
 
 const engine = new Styletron();
 
