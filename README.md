@@ -1,18 +1,6 @@
-<img src="https://github.com/lvamsavarthan/tictactoe/assets/banner.png" height=50% width=80% />
-
-
-
-<p align="center" style="font-weight:bold;color:#000;font-size:32px;"> 
-    tictactoe
-</p>
-
-<p align="center">
-    Just a normal popular children's game
-</p>
+<img src="https://github.com/lvamsavarthan/tictactoe/blob/master/assets/banner.png" height=50% width=80% />
 
 #### How to play 🕹
-
-------
 
 1. Go to https://onlinetictactoe.vercel.app
 
@@ -21,16 +9,14 @@
 3. That's it! 🎉
 
    
-
 #### Rules 📋
-
-------
 
 1. The game is played on a 3x3 grid
 2. If you are created of the room you will be **X** else **O**
 3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
+------
 
 
 ## Prerequisites
