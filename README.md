@@ -13,7 +13,7 @@
 
 1. The game is played on a 3x3 grid
 2. If you are created of the room you will be **X** else **O**
-3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
 ------
@@ -49,13 +49,13 @@
 1. Clone this repository to your local directory
 
    ```shell
-   $ git clone https://github.com/lvamsavarthan/goquotes-react.git
+   $ git clone https://github.com/lvamsavarthan/tictactoe.git
    ```
 
 2. Change your directory to project directory
 
    ```shell
-   $ cd goquotes-react
+   $ cd tictactoe
    ```
 
 3. Install the required dependencies by executing the command
@@ -74,4 +74,4 @@
 
 
 
-Powered by [tictactoe-backend](https://github.com/lvamsavarthan/tictactoe-server) ✨
+Powered by [tictactoe-servee](https://github.com/lvamsavarthan/tictactoe-server) ✨
