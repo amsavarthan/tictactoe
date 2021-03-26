@@ -1,4 +1,4 @@
-<img src="https://github.com/amsavarthan/tictactoe/blob/master/assets/banner.png" height="30%"/>
+<img src="https://github.com/amsavarthan/tictactoe/blob/master/assets/banner.png" height="30%" width="100%"/>
 
 #### How to play 🕹
 
