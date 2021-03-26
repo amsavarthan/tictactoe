@@ -74,4 +74,4 @@
 
 
 
-Powered by [tictactoe-servee](https://github.com/lvamsavarthan/tictactoe-server) ✨
+Backed by [tictactoe-server](https://github.com/amsavarthan/tictactoe-server) ✨
