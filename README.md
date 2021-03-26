@@ -1,4 +1,4 @@
-<img src="https://github.com/lvamsavarthan/tictactoe/blob/master/assets/banner.png" height="30%"/>
+<img src="https://github.com/amsavarthan/tictactoe/blob/master/assets/banner.png" height="30%"/>
 
 #### How to play 🕹
 
@@ -49,7 +49,7 @@
 1. Clone this repository to your local directory
 
    ```shell
-   $ git clone https://github.com/lvamsavarthan/tictactoe.git
+   $ git clone https://github.com/amsavarthan/tictactoe.git
    ```
 
 2. Change your directory to project directory
