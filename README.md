@@ -2,7 +2,7 @@
 
 #### How to play 🕹
 
-1. Go to https://onlinetictactoe.vercel.app
+1. Go to https://onlinetictactoe.vercel.app (currently server is down)
 
 2. Create a room or Join an existing room using the room code
 
@@ -12,7 +12,7 @@
 #### Rules 📋
 
 1. The game is played on a 3x3 grid
-2. If you are created of the room you will be **X** else **O**
+2. If you are the creator of a room then you will be **X** else **O**
 3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
